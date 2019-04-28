@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>北京移动</title>
+    <link rel="stylesheet" href="css/reset.min.css">
+    <!-- <link rel="stylesheet/less" href="css/styles.less"> -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- <script src="js/less-1.7.0.min.js"></script> -->
+    <script src="js/jquery-1.10.1.min.js"></script>
+    <script src="js/preLoader.js"></script>
+    <script>
+        preLoader([
+        './images/a_01_01.png',
+        './images/a_01_02.png',
+        './images/a_02_01.png',
+        './images/a_02_02.png',
+        './images/a_03_01.png',
+        './images/a_03_02.png',
+        './images/award_01.png',
+        './images/award.png',
+        './images/bg.png',
+        './images/born_tc.png',
+        './images/choose_01.png',
+        './images/choose_02.png',
+        './images/home_01.png',
+        './images/home_02.png',
+        './images/home_03.png',
+        './images/home_btn.png',
+        './images/m_01.png',
+        './images/m_02.png',
+        './images/m_03.png',
+        './images/m_04.png',
+        './images/m_05.png',
+        './images/m_06.png',
+        './images/m_07.png',
+        './images/m_08.png',
+        './images/m_09.png',
+        './images/m_10.png',
+        './images/m_11.png',
+        './images/m_12.png',
+        './images/m_13.png',
+        './images/m_14.png',
+        './images/m_15.png',
+        './images/m_16.png',
+        './images/m_17.png',
+        './images/m_18.png',
+        './images/m_19.png',
+        './images/m_20.png',
+        './images/m_21.png',
+        './images/m_22.png',
+        './images/m_23.png',
+        './images/m_24.png',
+        './images/m_25.png',
+        './images/m_26.png',
+        './images/m_27.png',
+        './images/m_28.png',
+        './images/m_29.png',
+        './images/m_30.png',
+        './images/m_31.png',
+        './images/m_32.png',
+        './images/m_33.png',
+        './images/m_34.png',
+        './images/main_01.png',
+        './images/main_list.png',
+        './images/map.png',
+        './images/share_01.png',
+        './images/tc_last.png',
+        './images/tc_yi_01.png',
+        './images/tc_yi_03.png'
+    ], function (percentage) {
+        var percentT = percentage * 100;
+        $('#loader_info').html((parseInt(percentT)) + '%');
+            if (percentage == 1) {
+                $('#loader').remove();
+                $('.fri_home').show();
+            }
+        });
+    </script>
+</head>
+
+<body>
+    <!--loading-->
+    <section id="loader">
+        <div>
+            <img src="./images/loading.gif" alt="loading">
+        </div>
+        <p>努力加载中...</p>
+        <p id="loader_info"></p>
+    </section>
+    <!--好友入口-->
+    <section class="fri_home">
+        <div></div>
+        <div></div>
+        <div>
+            <div>
+                <p>您的好友XXX，邀请您点亮自己美丽的出生地， </p>
+                <p>看看自己强大的人脉联络网，还有机会抽取流量哦～</p>
+                <p>快来一起参加吧！全国处处是朋友哦～</p>
+            </div>
+            <a href="./index.html?test=1">去点亮</a>
+        </div>
+      
+    </section>
+    <!-- 遮罩层 -->
+    <section class="mask" id="mask"></section>
+</body>
+
+</html>
+<script src="js/friend.js"></script>

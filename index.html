@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>北京移动</title>
+    <link rel="stylesheet" href="css/reset.min.css">
+    <!-- <link rel="stylesheet/less" href="css/styles.less"> -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- <script src="js/less-1.7.0.min.js"></script> -->
+    <script src="js/jquery-1.10.1.min.js"></script>
+    <script src="js/preLoader.js"></script>
+    <script>
+        preLoader([
+            './images/a_01_01.png',
+            './images/a_01_02.png',
+            './images/a_02_01.png',
+            './images/a_02_02.png',
+            './images/a_03_01.png',
+            './images/a_03_02.png',
+            './images/award_01.png',
+            './images/award.png',
+            './images/bg.png',
+            './images/born_tc.png',
+            './images/choose_01.png',
+            './images/choose_02.png',
+            './images/home_01.png',
+            './images/home_02.png',
+            './images/home_03.png',
+            './images/home_btn.png',
+            './images/m_01.png',
+            './images/m_02.png',
+            './images/m_03.png',
+            './images/m_04.png',
+            './images/m_05.png',
+            './images/m_06.png',
+            './images/m_07.png',
+            './images/m_08.png',
+            './images/m_09.png',
+            './images/m_10.png',
+            './images/m_11.png',
+            './images/m_12.png',
+            './images/m_13.png',
+            './images/m_14.png',
+            './images/m_15.png',
+            './images/m_16.png',
+            './images/m_17.png',
+            './images/m_18.png',
+            './images/m_19.png',
+            './images/m_20.png',
+            './images/m_21.png',
+            './images/m_22.png',
+            './images/m_23.png',
+            './images/m_24.png',
+            './images/m_25.png',
+            './images/m_26.png',
+            './images/m_27.png',
+            './images/m_28.png',
+            './images/m_29.png',
+            './images/m_30.png',
+            './images/m_31.png',
+            './images/m_32.png',
+            './images/m_33.png',
+            './images/m_34.png',
+            './images/main_01.png',
+            './images/main_list.png',
+            './images/map.png',
+            './images/share_01.png',
+            './images/tc_last.png',
+            './images/tc_yi_01.png',
+            './images/tc_yi_03.png'
+        ], function (percentage) {
+            var percentT = percentage * 100;
+            $('#loader_info').html((parseInt(percentT)) + '%');
+            if (percentage === 1) {
+                setTimeout(function () {
+                    $('#loader').remove();
+                    var islogin = localStorage.getItem('islogin')
+                    if (islogin != null) {
+                        if (getQueryVariable('test') != 1) {
+                            $('.home').hide()
+                            $('.main').show()
+                        } else {
+                            $('.home').show()
+                        }
+                    } else {
+                        $('.home').show()
+                        localStorage.setItem('islogin',1)
+                    }
+                }, 1000);
+            }
+        });
+    </script>
+</head>
+<body>
+     <!-- 测试按钮 -->
+     <button style="position:absolute;z-index:300;top:.5rem;font-weight:bolder;" href="#" class="test2 clickios" >没有关注公众号</button>
+     <button style="position:absolute;z-index:300;top:1rem;font-weight:bolder;" href="#" class="test3 clickios">没有绑定用户</button>
+     <button style="position:absolute;z-index:300;top:1.5rem;font-weight:bolder;" href="#" class="test4 clickios">异网用户</button>
+     <button style="position:absolute;z-index:300;top:2rem;font-weight:bolder;" href="#" class="test5 clickios">点击再次选择省份</button>
+     <button style="position:absolute;z-index:300;top:2.5rem;font-weight:bolder;" href="#" class="test6">恢复首次登陆</button>
+    <!--loading-->
+    <section id="loader">
+        <div>
+            <img src="./images/loading.gif" alt="loading">
+        </div>
+        <p>努力加载中...</p>
+        <p id="loader_info"></p>
+    </section>
+     <!-- 首页 -->
+    <section class="home">
+        <div></div>
+        <div></div>
+        <div><a href="javascript:void(0);" class="stratgame"></a></div>
+    </section>
+    <!-- 选择出生地 -->
+    <section class="choose">
+        <div>
+            <a href="javascript:void(0);">活动规则</a>
+            <div>
+                <p>选择您出生的地方来点亮吧，同时还可以发送给好友，</p>
+                <p> 去点亮TA所出生的地方。 </p>
+                <p>来看看五湖四海的朋友分布情况，还能一起赢流量哦～</p>
+            </div>
+        </div>
+        <div>
+            <div></div>
+            <a href="javascript:void(0);" id="choose_born">点击这里选择你的出生地</a>
+        </div>
+    </section>
+    <!-- 主页 -->
+    <section class="main">
+        <div>
+            <div><a href="javascript:void(0);">活动规则</a></div>
+            <!-- 地图 -->
+            <div class="map">
+                <!-- 1 -->
+                <div class="city"><div class="citybg" data="海南省"></div></div>
+                <!-- 2 -->
+                <div class="city"><div class="citybg" data="台湾省"></div></div>
+                <!-- 3 -->
+                <div class="city"><div class="citybg" data="香港特别行政区"></div></div>
+                <!-- 4 -->
+                <div class="city"><div class="citybg" data="澳门特别行政区"></div></div>
+                <!-- 5 -->
+                <div class="city"><div class="citybg" data="宁夏回族自治区"></div></div>
+                <!-- 6 -->
+                <div class="city"><div class="citybg" data="青海省"></div></div>
+                <!-- 7 -->
+                <div class="city"><div class="citybg" data="四川省"></div></div>
+                <!-- 8 -->
+                <div class="city"><div class="citybg" data="贵州省"></div></div>
+                <!-- 9 -->
+                <div class="city"><div class="citybg" data="重庆市"></div></div>
+                <!-- 10 -->
+                <div class="city"><div class="citybg" data="湖北省"></div></div>
+                <!-- 11 -->
+                <div class="city"><div class="citybg" data="湖南省"></div></div>
+                <!-- 12 -->
+                <div class="city"><div class="citybg" data="江西省"></div></div>
+                <!-- 13 -->
+                <div class="city"><div class="citybg" data="安徽省"></div></div>
+                <!-- 14 -->
+                <div class="city"><div class="citybg" data="河南省"></div></div>
+                <!-- 15 -->
+                <div class="city"><div class="citybg" data="山西省"></div></div>
+                <!-- 16 -->
+                <div class="city"><div class="citybg" data="陕西省"></div></div>
+                <!-- 17 -->
+                <div class="city"><div class="citybg" data="甘肃省"></div></div>
+                <!-- 18 -->
+                <div class="city"><div class="citybg" data="新疆维吾尔自治区"></div></div>
+                <!-- 19 -->
+                <div class="city"><div class="citybg" data="西藏自治区"></div></div>
+                <!-- 20 -->
+                <div class="city"><div class="citybg" data="云南省"></div></div>
+                <!-- 21 -->
+                <div class="city"><div class="citybg" data="广西壮族自治区"></div></div>
+                <!-- 22 -->
+                <div class="city"><div class="citybg" data="广东省"></div></div>
+                <!-- 23 -->
+                <div class="city"><div class="citybg" data="福建省"></div></div>
+                <!-- 24 -->
+                <div class="city"><div class="citybg" data="浙江省"></div></div>
+                <!-- 25 -->
+                <div class="city"><div class="citybg" data="上海市"></div></div>
+                <!-- 26 -->
+                <div class="city"><div class="citybg" data="江苏省"></div></div>
+                <!-- 27 -->
+                <div class="city"><div class="citybg" data="山东省"></div></div>
+                <!-- 28 -->
+                <div class="city"><div class="citybg" data="北京市"></div></div>
+                <!-- 29 -->
+                <div class="city"><div class="citybg" data="天津市"></div></div>
+                <!-- 30 -->
+                <div class="city"><div class="citybg" data="河北省"></div></div>
+                <!-- 31 -->
+                <div class="city"><div class="citybg" data="吉林省"></div></div>
+                <!-- 32 -->
+                <div class="city"><div class="citybg" data="辽宁省"></div></div>
+                <!-- 33 -->
+                <div class="city"><div class="citybg" data="内蒙古自治区"></div></div>
+                <!-- 34 -->
+                <div class="city"><div class="citybg" data="黑龙江省"></div></div>
+            </div>
+            <div>
+                <p>已被点亮<span id="alllight_places"> xx</span>个区域</p>
+                <p>快来一起点亮出生地，看看你的人脉网络</p>
+            </div>
+        </div>
+        <div>
+            <a href="javascript:void(0);" id="sendfriend">发送好友点亮出生地</a>
+            <a href="javascript:void(0);" id="goto">去抽流量</a>
+        </div>
+        <div>
+            <div>
+               <p>昵称</p> 
+               <p>时间</p>
+               <p>点亮</p>
+            </div>
+            <div>
+                <ul>
+                    <li>
+                        <span>好友好友1</span>
+                        <span>4月26日</span>
+                        <span>内蒙古自治区</span>
+                    </li>
+                    <li>
+                        <span>好友好友2</span>
+                        <span>4月26日</span>
+                        <span>广西壮族自治区</span>
+                    </li>
+                    <li>
+                        <span>好友好友3</span>
+                        <span>4月26日</span>
+                        <span>新疆维吾尔自治区</span>
+                    </li>
+                    <li>
+                        <span>好友好友4</span>
+                        <span>4月26日</span>
+                        <span>吉林省</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- 抽奖页 -->
+    <section class="award">
+        <div></div>  
+        <div>
+            <!-- 礼物盒 -->
+            <div>
+                <div>
+                    <div class="twono"></div>
+                    <div>
+                        <p>成功点亮</p>
+                        <p><span>2</span>个区域</p>
+                    </div>
+                    <a href="javascript:void(0);"class="lottery two_places">抽奖</a>
+                </div>
+                <div>
+                    <div class="fiveno"></div>
+                    <div>
+                        <p>成功点亮</p>
+                        <p><span>5</span>个区域</p>
+                    </div>
+                    <a href="javascript:void(0);" class="lottery five_places">抽奖</a>
+                </div>
+                <div>
+                    <div class="tenno"></div>
+                    <div>
+                        <p>成功点亮</p>
+                        <p><span>10</span>个区域</p>
+                    </div>
+                    <a href="javascript:void(0);" class="lottery ten_places">抽奖</a>
+                </div>
+            </div>
+            <div></div>
+            <a href="javascript:void(0);" id="return">返回</a>   
+        </div> 
+    </section>
+    <!-- 分享 -->
+    <section class="share">
+        <div>
+           <div></div>
+            <div>
+                <p>发送给好友</p>
+                <p> 看看你身边的朋友是从哪里来哒～</p>
+            </div>
+            
+        </div>
+    </section>
+    <!-- 绑定页 -->
+    <section class="bind">
+        <div>绑定手机号</div>
+    </section>
+    <!-- 出生地弹窗 -->
+    <section class="pop born">
+         <!-- 省份选择框 -->
+        <div class="province">
+            <ul class="chose_provice" id="chose_provice"> </ul>
+        </div>
+        <a href="javascript:void(0);" class="true_pro" id="true_pro">确定</a>
+    </section>
+    <!-- 本网获得流量弹窗 -->
+    <section class="pop tc_1" >
+        <div>
+            <p>恭喜您的手机号</p>
+            <p>xxxxxxxxxxx</p>
+            <p>获得<span>500MB</span>全国流量</p>
+            <p>流量将于15日内到账</p>
+            <p>有效期：7天</p>
+            <p>（流量到账后，立即生效）</p>
+            <a href="javascript:void(0);"></a>
+        </div>
+       <a href="javascript:void(0);" class="close">确定</a>
+    </section>
+    <!-- 异网流量弹窗 1-->
+    <section class="pop tc_2">
+        <div>
+            <p>恭喜您的手机号</p>
+            <p>xxxxxxxxxxx</p>
+            <p>获得<span> 500MB</span>全国流量</p>
+            <p>您可以转赠到北京移动号码内 </p>
+            <p>（流量仅可在活动期间进行转赠）</p>
+        </div>
+        <div>
+            <a href="javascript:void(0);" class="close2">取消</a>
+            <a href="javascript:void(0);" id="giveBtn">转增</a>
+        </div>
+    </section>
+    <!-- 异网弹窗2 -->
+    <section class="pop tc_3">
+        <div>
+            <p>请输入好友北京移动手机号码</p>
+            <div>
+                <p>手机号码</p>
+                <input id="inputTel" type="number" pattern="[0-9]*" oninput="if(value.length>11)value=value.slice(0,11)">
+            </div>
+            <p>（流量仅可在活动期间进行转赠）</p>
+        </div>
+        <a id="giveBtn_2" href="javascript:void(0)">确定</a>
+    </section >
+    <!-- 异网弹窗3 -->
+    <section class="pop tc_4"->
+        <div>
+            <p>您是否将</p>
+            <p><span> 500MB</span>全国流量 </p>
+            <p>转赠到手机号码</p>
+            <p class="mobile"> xxxxxxxxxxx </p>
+            <p> 账户中</p>
+            <p>（流量仅可在活动期间进行转赠）</p>
+        </div>
+        <div>
+            <a id="revise" href="javascript:void(0)">修改</a>
+            <a id="giveBtn_3" href="javascript:void(0)">确认</a>
+        </div>
+    </section>
+     <!-- 异网流量弹窗 4-->
+    <section class="pop tc_5">
+        <div>  
+            <p>您已将<span> 500MB</span>全国流量</p>
+            <p>转赠到手机号码</p>
+            <p><span>18500634365</span>账户中</p>
+            <p>流量将于15日内到账</p>
+            <p>有效期：7天</p>
+            <p>（流量到账后，立即生效）</p>
+            <a href="javascript:void(0);"></a>
+        </div>
+       <a href="javascript:void(0);" class="close">确定</a>
+    </section>
+    <!-- 未领奖弹窗 -->
+    <section class="pop unling">
+        <div>
+            <p>您还没有点亮<span id="unling_content">2</span>个地方哦~</p>
+        </div>
+        <a href="javascript:void(0);" class="close">确定</a>
+    </section>
+    <!-- 遮罩层 -->
+    <section class="mask" id="mask"></section>
+</body>
+</html>
+<script src="js/index.js"></script>
