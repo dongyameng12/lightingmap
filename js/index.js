@@ -58,6 +58,8 @@ $(document).ready(function () {
     var increase;
     // 领取奖励后当前class
     var current_clickclass
+    // 领取奖励后当前礼盒
+    var current_lihe
     //标记点亮的省份
     var lightArr = [];
     // 选中的省份
@@ -182,7 +184,7 @@ $(document).ready(function () {
                 $('.unling').show();
 			} else {
                 current_clickclass = '.two_places'
-                // $(this).parent('div').children('div:eq(0)').removeClass('twono').addClass('twoyes');
+                current_lihe = $(this).parent('div').children('div:eq(0)').removeClass('twono').addClass('twoyes');
                 jiangli();
 			}
 		}else if($(this).hasClass('five_places')){
@@ -193,6 +195,7 @@ $(document).ready(function () {
                 $('.unling').show();
 			} else {
                 current_clickclass = '.five_places'
+                current_lihe = $(this).parent('div').children('div:eq(0)').removeClass('fiveno').addClass('fiveyes'); 
                 jiangli();
 			}
 		}else if($(this).hasClass('ten_places')){
@@ -203,7 +206,7 @@ $(document).ready(function () {
                 $('.unling').show();
 			} else {
                 current_clickclass = '.ten_places'
-                // $(this).parent('div').children('div:eq(0)').removeClass('tenno').addClass('tenyes');
+                current_lihe = $(this).parent('div').children('div:eq(0)').removeClass('tenno').addClass('tenyes'); 
                 jiangli();
 			}
 		}
@@ -254,7 +257,7 @@ $(document).ready(function () {
        });
         //关闭
        $('.close').on('click',function(){
-           $(current_clickclass).parent('div').children('div:eq(0)').removeClass('fiveno').addClass('fiveyes');
+            current_lihe
            $(current_clickclass).css('background-color', '#ff746b');
            $(current_clickclass).text('点击查看');
            $(this).parent().hide();
