@@ -288,12 +288,9 @@ body section.main > div:nth-child(1) > div:nth-child(2) > div:nth-child(11) > di
   background: url('../images/m_11.png') no-repeat;
   background-size: cover;
 }
-html section.main > div:nth-child(1) > div:nth-child(2) > div:nth-child(12),
-body section.main > div:nth-child(1) > div:nth-child(2) > div:nth-child(12) {
-  display: none;
-}
 html section.main > div:nth-child(1) > div:nth-child(2) > div:nth-child(12) > div,
 body section.main > div:nth-child(1) > div:nth-child(2) > div:nth-child(12) > div {
+  display: none;
   position: absolute;
   top: 3.65rem;
   right: 1.18rem;
