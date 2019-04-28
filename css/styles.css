@@ -1398,8 +1398,7 @@ body section.mask {
   padding-top: 5rem;
   width: 7.5rem;
   height: 100%;
-  background: url('../images/bg.png') no-repeat;
-  background-size: cover;
+  background-color: #112363;
 }
 #loader div {
   margin: 0 auto .3rem;
