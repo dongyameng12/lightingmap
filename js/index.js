@@ -117,6 +117,11 @@ $(document).ready(function () {
         showMask();
         $('.born').show();
     })
+    // 选择出生地关闭按钮
+    $('#born_close').on('click',function(){
+        $('.born').hide();
+        hideMask();
+    })
     // 点击去抽流量
     $('#goto').on('click',function(){
         $('.main').hide();
@@ -183,8 +188,9 @@ $(document).ready(function () {
                 $('#unling_content').text('2');
                 $('.unling').show();
 			} else {
-                current_clickclass = '.two_places'
-                current_lihe = $(this).parent('div').children('div:eq(0)').removeClass('twono').addClass('twoyes');
+                current_clickclass = '.two_places';
+                current_lihe = 'two';
+                // current_lihe = $(this).parent('div').children('div:eq(0)').removeClass('twono').addClass('twoyes');
                 jiangli();
 			}
 		}else if($(this).hasClass('five_places')){
@@ -195,7 +201,8 @@ $(document).ready(function () {
                 $('.unling').show();
 			} else {
                 current_clickclass = '.five_places'
-                current_lihe = $(this).parent('div').children('div:eq(0)').removeClass('fiveno').addClass('fiveyes'); 
+                // current_lihe = $(this).parent('div').children('div:eq(0)').removeClass('fiveno').addClass('fiveyes'); 
+                current_lihe = 'five';
                 jiangli();
 			}
 		}else if($(this).hasClass('ten_places')){
@@ -206,7 +213,8 @@ $(document).ready(function () {
                 $('.unling').show();
 			} else {
                 current_clickclass = '.ten_places'
-                current_lihe = $(this).parent('div').children('div:eq(0)').removeClass('tenno').addClass('tenyes'); 
+                current_lihe = 'ten';
+                // current_lihe = $(this).parent('div').children('div:eq(0)').removeClass('tenno').addClass('tenyes'); 
                 jiangli();
 			}
 		}
@@ -257,7 +265,7 @@ $(document).ready(function () {
        });
         //关闭
        $('.close').on('click',function(){
-            current_lihe
+           $(current_clickclass).parent('div').children('div:eq(0)').removeClass(current_lihe+'no').addClass(current_lihe+'yes'); 
            $(current_clickclass).css('background-color', '#ff746b');
            $(current_clickclass).text('点击查看');
            $(this).parent().hide();
@@ -274,7 +282,7 @@ $(document).ready(function () {
         }
         return rtn;
     }
-    // 截取好友纪录字段
+
     // 测试
     $('.test2').on('click',function(){
         $('.test2').css('color','red');

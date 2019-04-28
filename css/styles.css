@@ -897,8 +897,22 @@ html section.pop.born,
 body section.pop.born {
   display: none;
 }
-html section.pop.born > div,
-body section.pop.born > div {
+html section.pop.born > div:nth-child(1),
+body section.pop.born > div:nth-child(1) {
+  width: 5.62rem;
+  text-align: right;
+  margin: .2rem auto;
+}
+html section.pop.born > div:nth-child(1) > a,
+body section.pop.born > div:nth-child(1) > a {
+  display: inline-block;
+  width: .65rem;
+  height: .65rem;
+  background: url('../images/close.png') no-repeat;
+  background-size: cover;
+}
+html section.pop.born > div:nth-child(2),
+body section.pop.born > div:nth-child(2) {
   width: 5.62rem;
   height: 4.59rem;
   background: url('../images/born_tc.png') no-repeat;
@@ -906,8 +920,8 @@ body section.pop.born > div {
   margin: 0 auto;
   position: relative;
 }
-html section.pop.born > div > ul,
-body section.pop.born > div > ul {
+html section.pop.born > div:nth-child(2) > ul,
+body section.pop.born > div:nth-child(2) > ul {
   position: absolute;
   left: 0;
   right: 0;
@@ -919,8 +933,8 @@ body section.pop.born > div > ul {
   overflow-y: scroll;
   font-size: .32rem;
 }
-html section.pop.born > div > ul > li,
-body section.pop.born > div > ul > li {
+html section.pop.born > div:nth-child(2) > ul > li,
+body section.pop.born > div:nth-child(2) > ul > li {
   width: 4.21rem;
   height: .52rem;
   border-radius: .26rem;
@@ -928,8 +942,8 @@ body section.pop.born > div > ul > li {
   box-sizing: border-box;
   line-height: .52rem;
 }
-html section.pop.born > div > ul > li.choosed,
-body section.pop.born > div > ul > li.choosed {
+html section.pop.born > div:nth-child(2) > ul > li.choosed,
+body section.pop.born > div:nth-child(2) > ul > li.choosed {
   background-color: #ff746b;
 }
 html section.pop.born > a,

@@ -290,6 +290,7 @@ html,body{
                                     }
                                 }
                                 &:nth-child(12){
+                              
                                     >div{
                                         display: none;
                                         position: absolute;
@@ -933,36 +934,52 @@ html,body{
             &.born{
                 display: none;
                 >div{
-                    width: 5.62rem;
-                    height: 4.59rem;
-                    background: url('../images/born_tc.png') no-repeat;
-                    background-size: cover;
-                    margin: 0 auto;
-                    position: relative;
-                    >ul{
-                        position: absolute;
-                        left: 0;
-                        right: 0;
-                        margin: auto;
-                        top: 0;
-                        bottom: 0;
-                        width: 4.21rem;
-                        height: 2.83rem;
-                        overflow-y: scroll;
-                        font-size: .32rem;
-                        >li{
+                    &:nth-child(1){
+                        width: 5.62rem;
+                        text-align: right;
+                        margin: .2rem auto;
+                        >a{
+                            display: inline-block;
+                            width: .65rem;
+                            height: .65rem;
+                            background: url('../images/close.png') no-repeat;
+                            background-size: cover;
+                        }
+                       
+                    }
+                    &:nth-child(2){
+                        width: 5.62rem;
+                        height: 4.59rem;
+                        background: url('../images/born_tc.png') no-repeat;
+                        background-size: cover;
+                        margin: 0 auto;
+                        position: relative;
+                        >ul{
+                            position: absolute;
+                            left: 0;
+                            right: 0;
+                            margin: auto;
+                            top: 0;
+                            bottom: 0;
                             width: 4.21rem;
-                            height: .52rem;
-                            border-radius: .26rem;
-                            line-height: .52rem;
-                            padding-left: .25rem;
-                            box-sizing: border-box;
-                            line-height: .52rem;
-                            &.choosed{
-                                background-color: #ff746b;
+                            height: 2.83rem;
+                            overflow-y: scroll;
+                            font-size: .32rem;
+                            >li{
+                                width: 4.21rem;
+                                height: .52rem;
+                                border-radius: .26rem;
+                                line-height: .52rem;
+                                padding-left: .25rem;
+                                box-sizing: border-box;
+                                line-height: .52rem;
+                                &.choosed{
+                                    background-color: #ff746b;
+                                }
                             }
                         }
                     }
+                   
                 }
                 >a{
                     display: inline-block;
