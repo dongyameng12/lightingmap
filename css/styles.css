@@ -1426,3 +1426,6 @@ body section.mask {
   line-height: 1.5em;
   text-align: center;
 }
+* {
+  touch-action: pan-y;
+}

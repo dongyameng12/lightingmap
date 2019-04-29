@@ -9,8 +9,11 @@
     if (!doc.addEventListener) return;
     win.addEventListener(resizeEvt, recalc, false);
     doc.addEventListener('DOMContentLoaded', recalc, false);
+})(document, window);
+// ios点击事件不触发
+$(function() {  
+    FastClick.attach(document.body);  
 })
-    (document, window);
 var ChineseDistricts = {
     110000: '北京市',
     120000: '天津市',
