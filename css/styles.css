@@ -565,7 +565,9 @@ body section.main > div:nth-child(1) > div:nth-child(3) > p:nth-child(1) {
 html section.main > div:nth-child(1) > div:nth-child(3) > p:nth-child(1) > span,
 body section.main > div:nth-child(1) > div:nth-child(3) > p:nth-child(1) > span {
   color: #fff;
-  font-size: .24rem;
+  font-size: .48rem;
+  font-weight: bolder;
+  margin: 0 .05rem;
 }
 html section.main > div:nth-child(1) > div:nth-child(3) > p:nth-child(2),
 body section.main > div:nth-child(1) > div:nth-child(3) > p:nth-child(2) {
