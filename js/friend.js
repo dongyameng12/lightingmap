@@ -12,7 +12,16 @@
 })(document, window);
 
 $(document).ready(function () {
-
+ // 点击活动规则
+ $('.rule').on('click',function(){
+    showMask();
+    $('.rulecontent').show();
+});
+// 关闭活动规则
+$('.close').on('click',function(){
+    hideMask();
+    $('.rulecontent').hide();
+})
 });
 //显示遮罩层
 function showMask() {

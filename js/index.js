@@ -285,7 +285,11 @@ $(document).ready(function () {
         }
         return rtn;
     }
-
+    // 点击活动规则
+    $('.rule').on('click',function(){
+        showMask();
+        $('.rulecontent').show();
+    })
     // 测试
     $('.test2').on('click',function(){
         $('.test2').css('color','red');

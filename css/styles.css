@@ -965,6 +965,61 @@ body section.pop.born > a {
   color: #000;
   border: solid 1px #000;
 }
+html section.pop.rulecontent,
+body section.pop.rulecontent {
+  display: none;
+}
+html section.pop.rulecontent > div,
+body section.pop.rulecontent > div {
+  width: 6.66rem;
+  height: 8.26rem;
+  margin: 0 auto;
+  background: url('../images/rule.png') no-repeat;
+  background-size: cover;
+  box-sizing: border-box;
+  font-size: .28rem;
+}
+html section.pop.rulecontent > div > div,
+body section.pop.rulecontent > div > div {
+  position: absolute;
+  top: 1.5rem;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 6.20rem;
+  height: 6.49rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+html section.pop.rulecontent > div > div > ul,
+body section.pop.rulecontent > div > div > ul {
+  width: 5.60rem;
+  height: 5.78rem;
+  overflow-y: scroll;
+  margin: 0 auto;
+}
+html section.pop.rulecontent > div > div > ul > li,
+body section.pop.rulecontent > div > div > ul > li {
+  text-align: justify;
+  line-height: .5rem;
+}
+html section.pop.rulecontent > a,
+body section.pop.rulecontent > a {
+  display: inline-block;
+  margin: .5rem auto 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3.01rem;
+  height: .83rem;
+  font-size: .26rem;
+  background-color: #ffb794;
+  border-radius: .65rem;
+  border: solid 1px #000;
+  box-sizing: border-box;
+  color: #000;
+}
 html section.pop.tc_1,
 body section.pop.tc_1 {
   display: none;
@@ -1338,6 +1393,22 @@ body section.fri_home > div:nth-child(1) {
   height: 3.78rem;
   background: url('../images/home_01.png') no-repeat;
   background-size: cover;
+}
+html section.fri_home > div:nth-child(1) > a,
+body section.fri_home > div:nth-child(1) > a {
+  position: absolute;
+  top: .4rem;
+  right: .4rem;
+  display: inline-block;
+  width: 1.8rem;
+  height: .5rem;
+  border-radius: .25rem;
+  background-color: #ffb794;
+  text-align: center;
+  line-height: .5rem;
+  font-size: .26rem;
+  color: #000;
+  border: solid 1px #000;
 }
 html section.fri_home > div:nth-child(2),
 body section.fri_home > div:nth-child(2) {
