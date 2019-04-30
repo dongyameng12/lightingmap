@@ -104,7 +104,7 @@ $(document).ready(function () {
                     // console.log(lightArr);
                     // console.log(lightArr.length)
                 } else {
-                    alert('有同样好友点亮该省份，请展示第一个点亮的好友');
+                    // alert('该城市已经被点亮');
                 }
                 return false
             }
@@ -149,7 +149,13 @@ $(document).ready(function () {
             $('#choose_born').trigger('click')
         }); 
     })
-  
+    // 没有中奖时，发送好友
+    $('.send_friend').on('click',function(){
+        hideMask();
+        $('.unling').hide();
+        $('.award').hide();
+        $('.share').show();
+    })
     // 判断关注，绑定等
     function jiangli() {
         if (attention) {

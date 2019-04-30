@@ -1357,15 +1357,18 @@ body section.pop.unling > div {
   height: 4.39rem;
   margin: 0 auto;
   text-align: center;
-  background: url('../images/tc_yi_01.png') no-repeat;
+  background: url(../images/tc_yi_01.png) no-repeat;
   background-size: cover;
   box-sizing: border-box;
-  padding: .77rem 0 .52rem;
   font-size: .24rem;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+}
+html section.pop.unling > div > p,
+body section.pop.unling > div > p {
+  line-height: .5rem;
 }
 html section.pop.unling > a,
 body section.pop.unling > a {
