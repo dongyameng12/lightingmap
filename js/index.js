@@ -314,6 +314,7 @@ $(document).ready(function () {
     });
     $('.test5').on('click',function(){
         $('.test5').css('color','red');
+        $('.award').hide()
         $('#choose_born').trigger('click')
     }); 
     // 恢复首次登陆
