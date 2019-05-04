@@ -38,9 +38,7 @@ body section.home > div:nth-child(3) > a {
   position: absolute;
   left: 0;
   right: 0;
-  top: .36rem;
   margin: auto;
-  z-index: 1;
   display: inline-block;
   width: 3.77rem;
   height: 2.15rem;
