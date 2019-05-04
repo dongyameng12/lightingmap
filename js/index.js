@@ -150,7 +150,7 @@ $(document).ready(function () {
     // 点击分享页面，默认分享(测试用)
     $('.share').on('click',function(){
         $('.share').hide();
-        $('.main').show();
+        $('.award').show();
     })
     // 没有中奖时，发送好友
     $('.send_friend').on('click',function(){

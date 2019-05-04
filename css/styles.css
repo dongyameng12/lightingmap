@@ -854,7 +854,7 @@ body section.share {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.95);
   z-index: 1000;
 }
 html section.share > div,
@@ -996,6 +996,16 @@ html section.pop.rulecontent > div > div > ul > li,
 body section.pop.rulecontent > div > div > ul > li {
   text-align: justify;
   line-height: .5rem;
+  font-size: .24rem;
+}
+html section.pop.rulecontent > div > div > ul > li:nth-child(1) > p:nth-child(1),
+body section.pop.rulecontent > div > div > ul > li:nth-child(1) > p:nth-child(1),
+html section.pop.rulecontent > div > div > ul > li:nth-child(2) > p:nth-child(1),
+body section.pop.rulecontent > div > div > ul > li:nth-child(2) > p:nth-child(1),
+html section.pop.rulecontent > div > div > ul > li:nth-child(3) > p:nth-child(1),
+body section.pop.rulecontent > div > div > ul > li:nth-child(3) > p:nth-child(1) {
+  font-size: .26rem;
+  font-weight: bolder;
 }
 html section.pop.rulecontent > a,
 body section.pop.rulecontent > a {
@@ -1578,7 +1588,7 @@ body section.mask {
   position: absolute;
   top: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.95);
   z-index: 100;
 }
 #loader {

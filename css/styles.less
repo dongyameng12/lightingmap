@@ -900,7 +900,7 @@ html,body{
             left: 0;
             width: 100%;
             height: 100%;
-            background-color: rgba(0,0,0,.8);
+            background-color: rgba(0,0,0,.95);
             z-index: 1000;
             >div{
                 width: 5.28rem;
@@ -1030,6 +1030,16 @@ html,body{
                             >li{
                                 text-align: justify;
                                 line-height: .5rem;
+                                font-size: .24rem;
+                                &:nth-child(1),&:nth-child(2),&:nth-child(3){
+                                    >p{
+                                        &:nth-child(1){
+                                            font-size: .26rem;
+                                            font-weight: bolder;
+                                        }
+                                    }
+                                }
+                                
                             }
                         }
                         
@@ -1452,21 +1462,6 @@ html,body{
                     height:3.78rem;
                     background: url('../images/home_01.png') no-repeat;
                     background-size: cover;
-                    // >a{
-                    //     position: absolute;
-                    //     top: .4rem;
-                    //     right: .4rem;
-                    //     display: inline-block;
-                    //     width:1.8rem;
-                    //     height: .5rem;
-                    //     border-radius: .25rem;
-                    //     background-color: #ffb794;
-                    //     text-align: center;
-                    //     line-height: .5rem;
-                    //     font-size: .26rem;
-                    //     color: #000;
-                    //     border: solid 1px #000;
-                    // }
                 }
                 &:nth-child(2){
                     width: 7.5rem;
@@ -1601,7 +1596,7 @@ html,body{
             position: absolute;
             top: 0;
             left: 0;
-            background-color: rgba(0,0,0,.8);
+            background-color: rgba(0,0,0,.95);
             z-index: 100;
         }
         
