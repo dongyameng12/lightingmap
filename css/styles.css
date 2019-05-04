@@ -1,6 +1,5 @@
 html,
 body {
-  width: 7.5rem;
   height: 100%;
   background: url('../images/bg.png') no-repeat;
   background-size: cover;
@@ -674,7 +673,7 @@ body section.award > div:nth-child(1) {
 }
 html section.award > div:nth-child(2),
 body section.award > div:nth-child(2) {
-  height: 8.24rem;
+  height: calc(96.1%);
   position: relative;
 }
 html section.award > div:nth-child(2) > div:nth-child(1),
