@@ -81,8 +81,8 @@
         });
     </script>
 </head>
-
 <body>
+    <button style="position:absolute;z-index:300;top:.5rem;font-weight:bolder;" href="#" class="test1 " >已参加活动</button>
     <!--loading-->
     <section id="loader">
         <div>
@@ -94,7 +94,7 @@
     <!--好友入口-->
     <section class="fri_home">
         <div>
-            <a href="javascript:void(0);" class="rule">活动规则</a>
+            <!-- <a href="javascript:void(0);" class="rule">活动规则</a> -->
         </div>
         <div></div>
         <div>
@@ -103,9 +103,46 @@
                 <p>看看自己强大的人脉联络网，还有机会抽取流量哦～</p>
                 <p>快来一起参加吧！全国处处是朋友哦～</p>
             </div>
-            <a href="./index.html?test=1">去点亮</a>
+            <a href="javascript:void(0);" id="go_light">去点亮</a>
         </div>
       
+    </section>
+     <!-- 选择出生地 -->
+    <section class="fri_choose">
+        <div>
+            <a href="javascript:void(0);" class="rule">活动规则</a>
+            <div>
+                <p>选择您出生的地方来点亮吧，同时还可以发送给好友，</p>
+                <p> 去点亮TA所出生的地方。 </p>
+                <p>来看看五湖四海的朋友分布情况，还能一起赢流量哦～</p>
+            </div>
+        </div>
+        <div>
+            <div></div>
+            <a href="javascript:void(0);" id="choose_born">点击这里选择你的出生地</a>
+        </div>
+    </section>
+     <!-- 出生地弹窗 -->
+     <section class="pop born">
+        <!-- 省份选择框 -->
+        <!-- 关闭 -->
+       <div> <a href="javascript:void(0);"  id="born_close"></a></div>
+       <div class="province">
+           <ul class="chose_provice" id="chose_provice"> </ul>
+       </div>
+       <a href="javascript:void(0);" class="true_pro" id="true_pro">确定</a>
+    </section>
+    <!-- 好友提示及自生成地图 -->
+    <section class="pop ownmap">
+        <div>
+            <p>您已为好友</p>
+            <p>成功点亮地图</p>
+            <p class="ownmap_conternt">同时也生成了</p>
+            <p class="ownmap_conternt">自己的地图人脉网哦~</p>
+            <p>快来看看自己的地图吧！</p>
+            <p>有机会抽取5.17GB</p>
+        </div>
+        <a href="javascript:void(0);" id="mymap">我的人脉地图</a>
     </section>
      <!-- 活动规则 -->
      <section class="pop rulecontent">

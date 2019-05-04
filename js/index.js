@@ -67,6 +67,12 @@ $(document).ready(function () {
     var lightArr = [];
     // 选中的省份
     var selectedText = '北京市'
+    // 好友页点亮地图
+    if (getUrlParms('frendcity') != null) {
+        selectedText = getUrlParms('frendcity')
+        light_city()
+        selectedText = '北京市'
+    }
     // 动态添加省份
     function addProvice () {
         var li = ''
@@ -92,6 +98,11 @@ $(document).ready(function () {
         hideMask();
         $('.choose').hide();
         $('.main').show();
+        light_city()
+    })
+
+    // 点亮city
+    function light_city () {
         $(".city").each(function () {
             if ($(this).children('div').attr('data') == selectedText) {
                 // 没被点亮
@@ -101,6 +112,7 @@ $(document).ready(function () {
                     lightArr.push(1);
                     // 点亮的个数
                     $('#alllight_places').text(lightArr.length);
+
                     // console.log(lightArr);
                     // console.log(lightArr.length)
                 } else {
@@ -109,7 +121,7 @@ $(document).ready(function () {
                 return false
             }
         })
-    })
+    }
     // 点击主页开始按钮
     $('.stratgame').on('click',function(){
         $('.home').hide();
@@ -135,19 +147,10 @@ $(document).ready(function () {
         $('.award').hide();
         $('.main').show();
     })
-    // 点击抽奖页的发送好友
-    $('#sendfriend').on('click',function(){
-        $('.main').hide();
-        $('.share').show();
-    })
     // 点击分享页面，默认分享(测试用)
     $('.share').on('click',function(){
         $('.share').hide();
         $('.main').show();
-        $('.test5').on('click',function(){
-            $('.test5').css('color','red');
-            $('#choose_born').trigger('click')
-        }); 
     })
     // 没有中奖时，发送好友
     $('.send_friend').on('click',function(){
@@ -309,10 +312,10 @@ $(document).ready(function () {
         $('.test4').css('color','red');
         CM = false;
     });
-    // $('.test5').on('click',function(){
-    //     $('.test5').css('color','red');
-    //     $('#choose_born').trigger('click')
-    // }); 
+    $('.test5').on('click',function(){
+        $('.test5').css('color','red');
+        $('#choose_born').trigger('click')
+    }); 
     // 恢复首次登陆
     $('.test6').on('click',function () {
         $('.test6').css('color','red');
@@ -332,14 +335,12 @@ function hideMask() {
     $("#mask").hide();
     $('body').css('position', 'unset');
 }
+
 // 获取url参数
-function getQueryVariable(variable)
-{
-       var query = window.location.search.substring(1);
-       var vars = query.split("&");
-       for (var i=0;i<vars.length;i++) {
-               var pair = vars[i].split("=");
-               if(pair[0] == variable){return pair[1];}
-       }
-       return(false);
+function getUrlParms(name) {
+    var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
+    var r = window.location.search.substr(1).match(reg);
+    if (r != null)
+        return decodeURI(r[2]);
+    return null;
 }

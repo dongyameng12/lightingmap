@@ -605,7 +605,7 @@ html,body{
                     width: 6.66rem;
                     margin: .34rem auto .49rem;
                     display: flex;
-                    justify-content: space-between;
+                    justify-content: center;
                     >a{
                         display: inline-block;
                         border: solid 1px #000;
@@ -616,12 +616,13 @@ html,body{
                         font-size: .26rem;
                         color: #000;
                         border-radius: .415rem;
-                        &:nth-child(1){
-                            background-color: #ff746b;
-                        }
-                        &:nth-child(2){
-                            background-color: #ffb794;
-                        }
+                        background-color: #ffb794;
+                        // &:nth-child(1){
+                        //     background-color: #ff746b;
+                        // }
+                        // &:nth-child(2){
+                            
+                        // }
                     }
                 }
                 &:nth-child(3){
@@ -1393,6 +1394,54 @@ html,body{
                     color: #000;
                 }
             }
+            // 好友自己地图
+            &.ownmap{
+                display: none;
+                >div{
+                    width: 5.62rem;
+                    height: 5.89rem;
+                    margin: 0 auto;
+                    text-align: center;
+                    background: url('../images/tc_last.png') no-repeat;
+                    background-size: cover;
+                    box-sizing: border-box;
+                    font-size: .24rem;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content:center;
+                    align-items: center;
+                    >p{
+                      line-height: .5rem;
+                      &:nth-child(5){
+                          margin-top: .4rem;
+                      }
+                    }
+                    >a{
+                        display: inline-block;
+                        width: 4.8rem;
+                        height: 1.34rem;
+                        background-color: rgb(189, 28, 28);
+                        margin: .51rem auto 0;
+                        // background: url(../images/cm_10GB.gif) center no-repeat;
+                        // background-size: cover;
+                    }
+                }
+                >a{
+                    display: inline-block;
+                    margin: .5rem auto 0;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 3.01rem;
+                    height: .83rem;
+                    font-size: .26rem;
+                    background-color: #ffb794;
+                    border-radius: .65rem;
+                    border: solid 1px #000;
+                    box-sizing: border-box;
+                    color: #000;
+                }
+            }
         }
         // 好友入口
         section.fri_home{
@@ -1403,21 +1452,21 @@ html,body{
                     height:3.78rem;
                     background: url('../images/home_01.png') no-repeat;
                     background-size: cover;
-                    >a{
-                        position: absolute;
-                        top: .4rem;
-                        right: .4rem;
-                        display: inline-block;
-                        width:1.8rem;
-                        height: .5rem;
-                        border-radius: .25rem;
-                        background-color: #ffb794;
-                        text-align: center;
-                        line-height: .5rem;
-                        font-size: .26rem;
-                        color: #000;
-                        border: solid 1px #000;
-                    }
+                    // >a{
+                    //     position: absolute;
+                    //     top: .4rem;
+                    //     right: .4rem;
+                    //     display: inline-block;
+                    //     width:1.8rem;
+                    //     height: .5rem;
+                    //     border-radius: .25rem;
+                    //     background-color: #ffb794;
+                    //     text-align: center;
+                    //     line-height: .5rem;
+                    //     font-size: .26rem;
+                    //     color: #000;
+                    //     border: solid 1px #000;
+                    // }
                 }
                 &:nth-child(2){
                     width: 7.5rem;
@@ -1468,6 +1517,76 @@ html,body{
                 }
             }
         }
+        // 好友选择出生地
+        section.fri_choose{
+            display: none;
+            >div{
+                &:nth-child(1){
+                    width: 7.5rem;
+                    height:2.8rem;
+                    background: url('../images/choose_01.png') no-repeat;
+                    background-size: cover;
+                    position: relative;
+                    >a{
+                        position: absolute;
+                        top: .4rem;
+                        right: .4rem;
+                        display: inline-block;
+                        width:1.8rem;
+                        height: .5rem;
+                        border-radius: .25rem;
+                        background-color: #ffb794;
+                        text-align: center;
+                        line-height: .5rem;
+                        font-size: .26rem;
+                        color: #000;
+                        border: solid 1px #000;
+                    }
+                    >div{
+                        position: absolute;
+                        left: 0;
+                        right: 0;
+                        bottom: 0;
+                        margin: auto;
+                        width: 5.79rem;
+                        height:1.26rem;
+                        color: #ffb794;
+                    } 
+                }
+                &:nth-child(2){
+                    width: 7.5rem;
+                    height:7.8rem;
+                    background: url('../images/choose_02.png') no-repeat;
+                    background-size: cover; 
+                    position: relative;
+                   >div{
+                    width: 6.77rem;
+                    height:6.44rem;
+                    background: url('../images/map.png') no-repeat;
+                    background-size: cover;
+                    margin: 0 auto;
+                   }
+                   >a{
+                       position: absolute;
+                       bottom: 0;
+                       left: 0;
+                       right: 0;
+                       margin: auto;
+                       display: inline-block;
+                       width: 4.61rem;
+                       height: .83rem;
+                       border-radius: .415rem;
+                       background-color: #ffb794;
+                       text-align: center;
+                       line-height: .83rem;
+                       font-size: .26rem;
+                       color: #000;
+                       border: solid 1px #000;
+                   }
+                }
+            }
+        }
+      
         // 绑定页
         section.bind{
             display: none;

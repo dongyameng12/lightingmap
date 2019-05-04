@@ -579,7 +579,7 @@ body section.main > div:nth-child(2) {
   width: 6.66rem;
   margin: .34rem auto .49rem;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 html section.main > div:nth-child(2) > a,
 body section.main > div:nth-child(2) > a {
@@ -592,13 +592,6 @@ body section.main > div:nth-child(2) > a {
   font-size: .26rem;
   color: #000;
   border-radius: .415rem;
-}
-html section.main > div:nth-child(2) > a:nth-child(1),
-body section.main > div:nth-child(2) > a:nth-child(1) {
-  background-color: #ff746b;
-}
-html section.main > div:nth-child(2) > a:nth-child(2),
-body section.main > div:nth-child(2) > a:nth-child(2) {
   background-color: #ffb794;
 }
 html section.main > div:nth-child(3),
@@ -1386,6 +1379,57 @@ body section.pop.unling > a {
   box-sizing: border-box;
   color: #000;
 }
+html section.pop.ownmap,
+body section.pop.ownmap {
+  display: none;
+}
+html section.pop.ownmap > div,
+body section.pop.ownmap > div {
+  width: 5.62rem;
+  height: 5.89rem;
+  margin: 0 auto;
+  text-align: center;
+  background: url('../images/tc_last.png') no-repeat;
+  background-size: cover;
+  box-sizing: border-box;
+  font-size: .24rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+html section.pop.ownmap > div > p,
+body section.pop.ownmap > div > p {
+  line-height: .5rem;
+}
+html section.pop.ownmap > div > p:nth-child(5),
+body section.pop.ownmap > div > p:nth-child(5) {
+  margin-top: .4rem;
+}
+html section.pop.ownmap > div > a,
+body section.pop.ownmap > div > a {
+  display: inline-block;
+  width: 4.8rem;
+  height: 1.34rem;
+  background-color: #bd1c1c;
+  margin: .51rem auto 0;
+}
+html section.pop.ownmap > a,
+body section.pop.ownmap > a {
+  display: inline-block;
+  margin: .5rem auto 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3.01rem;
+  height: .83rem;
+  font-size: .26rem;
+  background-color: #ffb794;
+  border-radius: .65rem;
+  border: solid 1px #000;
+  box-sizing: border-box;
+  color: #000;
+}
 html section.fri_home,
 body section.fri_home {
   display: none;
@@ -1396,22 +1440,6 @@ body section.fri_home > div:nth-child(1) {
   height: 3.78rem;
   background: url('../images/home_01.png') no-repeat;
   background-size: cover;
-}
-html section.fri_home > div:nth-child(1) > a,
-body section.fri_home > div:nth-child(1) > a {
-  position: absolute;
-  top: .4rem;
-  right: .4rem;
-  display: inline-block;
-  width: 1.8rem;
-  height: .5rem;
-  border-radius: .25rem;
-  background-color: #ffb794;
-  text-align: center;
-  line-height: .5rem;
-  font-size: .26rem;
-  color: #000;
-  border: solid 1px #000;
 }
 html section.fri_home > div:nth-child(2),
 body section.fri_home > div:nth-child(2) {
@@ -1453,6 +1481,79 @@ body section.fri_home > div:nth-child(3) > a {
   margin: auto;
   display: inline-block;
   width: 3.01rem;
+  height: .83rem;
+  border-radius: .415rem;
+  background-color: #ffb794;
+  text-align: center;
+  line-height: .83rem;
+  font-size: .26rem;
+  color: #000;
+  border: solid 1px #000;
+}
+html section.fri_choose,
+body section.fri_choose {
+  display: none;
+}
+html section.fri_choose > div:nth-child(1),
+body section.fri_choose > div:nth-child(1) {
+  width: 7.5rem;
+  height: 2.8rem;
+  background: url('../images/choose_01.png') no-repeat;
+  background-size: cover;
+  position: relative;
+}
+html section.fri_choose > div:nth-child(1) > a,
+body section.fri_choose > div:nth-child(1) > a {
+  position: absolute;
+  top: .4rem;
+  right: .4rem;
+  display: inline-block;
+  width: 1.8rem;
+  height: .5rem;
+  border-radius: .25rem;
+  background-color: #ffb794;
+  text-align: center;
+  line-height: .5rem;
+  font-size: .26rem;
+  color: #000;
+  border: solid 1px #000;
+}
+html section.fri_choose > div:nth-child(1) > div,
+body section.fri_choose > div:nth-child(1) > div {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 5.79rem;
+  height: 1.26rem;
+  color: #ffb794;
+}
+html section.fri_choose > div:nth-child(2),
+body section.fri_choose > div:nth-child(2) {
+  width: 7.5rem;
+  height: 7.8rem;
+  background: url('../images/choose_02.png') no-repeat;
+  background-size: cover;
+  position: relative;
+}
+html section.fri_choose > div:nth-child(2) > div,
+body section.fri_choose > div:nth-child(2) > div {
+  width: 6.77rem;
+  height: 6.44rem;
+  background: url('../images/map.png') no-repeat;
+  background-size: cover;
+  margin: 0 auto;
+}
+html section.fri_choose > div:nth-child(2) > a,
+body section.fri_choose > div:nth-child(2) > a {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  display: inline-block;
+  width: 4.61rem;
   height: .83rem;
   border-radius: .415rem;
   background-color: #ffb794;

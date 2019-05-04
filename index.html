@@ -80,12 +80,8 @@
                     $('#loader').remove();
                     var islogin = localStorage.getItem('islogin')
                     if (islogin != null) {
-                        if (getQueryVariable('test') != 1) {
-                            $('.home').hide()
-                            $('.main').show()
-                        } else {
-                            $('.home').show()
-                        }
+                        $('.home').hide()
+                        $('.main').show()
                     } else {
                         $('.home').show()
                         localStorage.setItem('islogin',1)
@@ -212,8 +208,7 @@
             </div>
         </div>
         <div>
-            <a href="javascript:void(0);" id="sendfriend">发送好友点亮出生地</a>
-            <a href="javascript:void(0);" id="goto">去抽流量</a>
+            <a href="javascript:void(0);" id="goto">点亮地图抽取5.17</a>
         </div>
         <div>
             <div>
