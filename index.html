@@ -79,12 +79,17 @@
                 setTimeout(function () {
                     $('#loader').remove();
                     var islogin = localStorage.getItem('islogin')
-                    if (islogin != null) {
-                        $('.home').hide()
+                    if (getUrlParms('frendcity')) {
                         $('.main').show()
-                    } else {
-                        $('.home').show()
                         localStorage.setItem('islogin',1)
+                    } else {
+                        if (islogin != null) {
+                            $('.home').hide()
+                            $('.main').show()
+                        } else {
+                            $('.home').show()
+                            localStorage.setItem('islogin',1)
+                        }
                     }
                 }, 1000);
             }
@@ -208,6 +213,7 @@
             </div>
         </div>
         <div>
+            <!-- <a href="javascript:void(0);" id="sendfriend">发送好友点亮出生地</a> -->
             <a href="javascript:void(0);" id="goto">点亮地图抽取5.17</a>
         </div>
         <div>
