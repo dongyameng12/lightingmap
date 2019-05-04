@@ -818,15 +818,6 @@ body section.award > div:nth-child(2) > div:nth-child(1) > div:nth-child(3) > a 
   color: #000;
   border: solid 1px #000;
 }
-html section.award > div:nth-child(2) > div:nth-child(2),
-body section.award > div:nth-child(2) > div:nth-child(2) {
-  position: absolute;
-  bottom: 0;
-  width: 7.5rem;
-  height: 5.68rem;
-  background: url('../images/award_01.png') no-repeat;
-  background-size: cover;
-}
 html section.award > div:nth-child(2) > a,
 body section.award > div:nth-child(2) > a {
   display: inline-block;
