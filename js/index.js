@@ -201,7 +201,27 @@ $(document).ready(function () {
 			} else {
                 current_clickclass = '.two_places';
                 current_lihe = 'two';
-                // current_lihe = $(this).parent('div').children('div:eq(0)').removeClass('twono').addClass('twoyes');
+                // 跳转链接本网
+                // 测试用（选择两者中的一个链接）
+                var data
+                if ($(current_clickclass).text() == '抽奖') {
+                    data = parseInt(Math.random()*3);
+                }
+                switch(data){
+                    case 0:
+                        //流量放心用
+                        $('#cm_aimg').css('background-image','url(images/cq_qita.gif)').attr('href','https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx7858699aca01b75f&redirect_uri=http%3A%2F%2Fserviceimg.bmcc.com.cn%2Fweixin%2Fredirect%2FdispenseRequest.action&response_type=code&scope=snsapi_base&state=cxbxl2018072#wechat_redirect');    
+                        break;
+                    case 1:
+                        // 10元10GB
+                        $('#cm_aimg').css('background-image','url(images/cm_10GB.gif)').attr('href','http://open.weixin.qq.com/connect/oauth2/authorize?appid=wx7858699aca01b75f&redirect_uri=http%3A%2F%2Fserviceimg.bmcc.com.cn%2Fweixin%2Fredirect%2FdispenseRequest.action&response_type=code&scope=snsapi_base&state=hxyhq10Y#wechat_redirect'); 
+                        break;
+                    case 2:
+                        // 待定
+                        $('#cm_aimg').css('background-color','#cc2e38')
+                }
+                // 异网（移动王卡）
+                $('#yi_aimg').css('background-image','url(images/cm_yidongw.gif)').attr('href',' https://service.bj.10086.cn/m/num/num/commonNum/showFontPage.action?busiCode=YDWKXCX'); 
                 jiangli();
 			}
 		}else if($(this).hasClass('five_places')){
@@ -212,8 +232,11 @@ $(document).ready(function () {
                 $('.unling').show();
 			} else {
                 current_clickclass = '.five_places'
-                // current_lihe = $(this).parent('div').children('div:eq(0)').removeClass('fiveno').addClass('fiveyes'); 
                 current_lihe = 'five';
+                // 跳转链接本网（移动王卡）
+                $('#cm_aimg').css('background-image','url(images/cm_yidongw.gif)').attr('href',' https://service.bj.10086.cn/m/num/num/commonNum/showFontPage.action?busiCode=YDWKXCX'); 
+                // 跳转异网（宽带）
+                $('#yi_aimg').css('background-image','url(images/yi_kuandai.png)').attr('href','http://service.bj.10086.cn/m/p/kdzq/weixinyiwang/')
                 jiangli();
 			}
 		}else if($(this).hasClass('ten_places')){
@@ -225,7 +248,10 @@ $(document).ready(function () {
 			} else {
                 current_clickclass = '.ten_places'
                 current_lihe = 'ten';
-                // current_lihe = $(this).parent('div').children('div:eq(0)').removeClass('tenno').addClass('tenyes'); 
+                // 跳转链接本网（手厅推荐）
+                $('#cm_aimg').css('background-image','url(images/cm_handt.gif)').attr('href','https://mp.weixin.qq.com/s/CtHh-Ea6txKdcEu_7zeHPA'); 
+                 // 跳转异网（无限卡）
+                $('#yi_aimg').css('background-image','url(images/yi_wuxian.gif)').attr('href','  https://service.bj.10086.cn/m/num/num/commonNum/showFontPage.action?busiCode=WXKWTYW')
                 jiangli();
 			}
 		}
