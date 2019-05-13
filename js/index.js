@@ -187,8 +187,7 @@ $(document).ready(function () {
             }
         } else {
             // 未关注
-            alert('未关注');
-            // window.location.href = "https://mp.weixin.qq.com/s/FDD5Q57SnOrWAiYkfyzLFQ";
+            window.location.href = "https://mp.weixin.qq.com/s/FDD5Q57SnOrWAiYkfyzLFQ";
         }
     };
     // 点击领取奖励
