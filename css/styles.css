@@ -1509,15 +1509,19 @@ body section.fri_home > div:nth-child(3) > div {
   background-size: cover;
   margin: 0 auto;
 }
-html section.fri_home > div:nth-child(3) > div > p:nth-child(5),
-body section.fri_home > div:nth-child(3) > div > p:nth-child(5) {
+html section.fri_home > div:nth-child(3) > div > p:nth-child(2),
+body section.fri_home > div:nth-child(3) > div > p:nth-child(2) {
+  margin: .1rem auto;
+}
+html section.fri_home > div:nth-child(3) > div > p:nth-child(4),
+body section.fri_home > div:nth-child(3) > div > p:nth-child(4) {
   text-align: center;
-  margin-top: .1rem;
+  margin-top: .2rem;
   color: #fff;
   font-size: .28rem;
 }
-html section.fri_home > div:nth-child(3) > div > p:nth-child(5) > span,
-body section.fri_home > div:nth-child(3) > div > p:nth-child(5) > span {
+html section.fri_home > div:nth-child(3) > div > p:nth-child(4) > span,
+body section.fri_home > div:nth-child(3) > div > p:nth-child(4) > span {
   color: #d60e0e;
 }
 html section.fri_home > div:nth-child(3) > a,
