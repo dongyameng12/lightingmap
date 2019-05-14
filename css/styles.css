@@ -1383,6 +1383,12 @@ html section.pop.unling > div > p,
 body section.pop.unling > div > p {
   line-height: .5rem;
 }
+html section.pop.unling > div > p:nth-child(5) > span,
+body section.pop.unling > div > p:nth-child(5) > span {
+  font-size: .38rem;
+  color: #ec1e1e;
+  font-weight: bolder;
+}
 html section.pop.unling > a,
 body section.pop.unling > a {
   display: inline-block;
