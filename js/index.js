@@ -112,7 +112,6 @@ $(document).ready(function () {
                     lightArr.push(1);
                     // 点亮的个数
                     $('#alllight_places').text(lightArr.length);
-
                     // console.log(lightArr);
                     // console.log(lightArr.length)
                 } else {
