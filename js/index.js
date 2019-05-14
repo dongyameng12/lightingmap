@@ -170,14 +170,29 @@ $(document).ready(function () {
                     $('.tc_1').show();
                 } else {
                     //异网中流量 
-                    if ($(current_clickclass).text() == '点击查看') {
-                        // alert('查看奖励')
+                    // if ($(current_clickclass).text() == '点击查看') {
+                    //     // alert('查看奖励')
+                    //     showMask();
+                    //     $('.tc_5').show();
+                    // } else {
+                    //     showMask();
+                    //     $('.tc_2').show();
+                    // }
+                     if ($(current_clickclass).text() == '点击查看') {
                         showMask();
-                        $('.tc_5').show();
+                        // alert('查看奖励')
+                        if ($(current_clickclass).hasClass('cancel')) {
+                            // 取消的点击查看
+                            $('.tc_2').show();    
+                        } else {
+                            // 转增的点击查看
+                            $('.tc_5').show(); 
+                        }
                     } else {
                         showMask();
                         $('.tc_2').show();
                     }
+                    
                 }
             } else {
                 $('.award').hide();
@@ -221,7 +236,8 @@ $(document).ready(function () {
                         $('#cm_aimg').css('background-color','#cc2e38')
                 }
                 // 异网（移动王卡）
-                $('#yi_aimg').css('background-image','url(images/cm_yidongw.gif)').attr('href',' https://service.bj.10086.cn/m/num/num/commonNum/showFontPage.action?busiCode=YDWKXCX'); 
+
+                $('#yi_aimg').css('background-image','url(images/cm_yidongw.gif)').attr('href',' https://service.bj.10086.cn/m/num/num/commonNum/showFontPage.action?busiCode=YDWKWXYW'); 
                 jiangli();
 			}
 		}else if($(this).hasClass('five_places')){
@@ -261,11 +277,15 @@ $(document).ready(function () {
         if (increase) {
            //转增
            $('.tc_2').hide();  
-           $('.tc_3').show();  
+           $('.tc_3').show();
+           $(current_clickclass).removeClass('cancel')  
         } else {
            //  取消
            hideMask();
-           $('.tc_2').hide();  
+           $('.tc_2').hide(); 
+           $(current_clickclass).parent('div').children('div:eq(0)').removeClass(current_lihe+'no').addClass(current_lihe+'yes'); 
+           $(current_clickclass).css('background-color', '#ff746b');
+           $(current_clickclass).text('点击查看').addClass('cancel');
         }  
        };
        //异网流量弹窗 1（取消）

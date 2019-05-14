@@ -607,20 +607,20 @@ html,body{
                     >a{
                         display: inline-block;
                         border: solid 1px #000;
-                        width: 3.10rem;
+                        width:4.5rem;
                         height: .83rem;
                         text-align: center;
                         line-height: .83rem;
                         font-size: .26rem;
-                        color: #000;
+                        color: #d60e0e;
                         border-radius: .415rem;
                         background-color: #ffb794;
-                        // &:nth-child(1){
-                        //     background-color: #ff746b;
-                        // }
-                        // &:nth-child(2){
-                            
-                        // }
+                        animation:mymove 1.3s infinite;
+                        -webkit-animation:mymove 1.3s infinite; /*Safari and Chrome*/
+                        animation-direction:alternate;/*轮流反向播放动画。*/
+                        animation-timing-function: ease-in-out; /*动画的速度曲线*/
+                        font-size: .4rem;
+                        font-weight: 540;
                     }
                 }
                 &:nth-child(3){
@@ -902,25 +902,16 @@ html,body{
             background-color: rgba(0,0,0,.95);
             z-index: 1000;
             >div{
-                width: 5.28rem;
-                height: 1.75rem;
-                margin: .4rem auto 0;
+                width: 5.79rem;
+                height:2.84rem;
+                background: url('../images/share_01.png') no-repeat;
+                background-size: cover;
+                margin: 0 auto;
                 position: relative;
-                color: #ffbb9a;
-                >div{
-                    &:nth-child(1){
-                        width: 1.62rem;
-                        height: 1.09rem;
-                        background: url('../images/share_01.png') no-repeat;
-                        background-size: cover;
-                        position: absolute;
-                        right: 0;
-                    }
-                    &:nth-child(2){
-                        position: absolute;
-                       top: 1.02rem;
-                    }
-                }
+                top: .38rem;
+                left: 0;
+                right: 0;
+                margin: auto;
             }
         }
         // 弹窗
@@ -1477,17 +1468,28 @@ html,body{
                     >div{
                         display: flex;
                         flex-direction: column;
-                        justify-content: space-around;
-                        width: 6.84rem;
-                        height: 1.48rem;
-                        font-size: .28rem;
-                        color: #ffb794;
+                        justify-content: center;
+                        align-items: center;
+                        padding: .2rem .23rem;
+                        width: 6.5rem;
+                        height: 2.4rem;
+                        font-size: .24rem;
+                        color: #000;
                         margin: 0 auto .45rem;
+                        border: solid 1px #03112b;
+                        box-sizing: border-box;
+                        border-radius: .2rem;
+                        background-color: #ff746b;
+                        font-weight: bolder;
                         >p{
-                            &:nth-child(3){
-                                width: 6.48rem;
+                            &:nth-child(2){
+                                margin: .1rem 0;
+                            }
+                            &:nth-child(4){
                                 text-align: center;
+                                margin-top: .2rem;
                                 color: #fff;
+                                font-size: .28rem;
                             }
                             
                         }
@@ -1599,6 +1601,39 @@ html,body{
             z-index: 100;
         }
         
+}
+  // 按钮缩放
+  @keyframes mymove
+  {
+      0%{
+      transform: scale(1);  /*开始为原始大小*/
+      }
+      25%{
+          transform: scale(1.1); /*放大1.1倍*/
+      }
+      50%{
+          transform: scale(1);
+      }
+      75%{
+          transform: scale(1.1);
+      }
+
+  }
+  
+  @-webkit-keyframes mymove /*Safari and Chrome*/
+  {
+      0%{
+      transform: scale(1);  /*开始为原始大小*/
+      }
+      25%{
+          transform: scale(1.1); /*放大1.1倍*/
+      }
+      50%{
+          transform: scale(1);
+      }
+      75%{
+          transform: scale(1.1);
+      }
 }
 // 加载的样式
 #loader{
