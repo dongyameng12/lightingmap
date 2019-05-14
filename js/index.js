@@ -170,14 +170,6 @@ $(document).ready(function () {
                     $('.tc_1').show();
                 } else {
                     //异网中流量 
-                    // if ($(current_clickclass).text() == '点击查看') {
-                    //     // alert('查看奖励')
-                    //     showMask();
-                    //     $('.tc_5').show();
-                    // } else {
-                    //     showMask();
-                    //     $('.tc_2').show();
-                    // }
                      if ($(current_clickclass).text() == '点击查看') {
                         showMask();
                         // alert('查看奖励')
@@ -236,7 +228,6 @@ $(document).ready(function () {
                         $('#cm_aimg').css('background-color','#cc2e38')
                 }
                 // 异网（移动王卡）
-
                 $('#yi_aimg').css('background-image','url(images/cm_yidongw.gif)').attr('href',' https://service.bj.10086.cn/m/num/num/commonNum/showFontPage.action?busiCode=YDWKWXYW'); 
                 jiangli();
 			}

@@ -76,6 +76,14 @@ html,body{
                         width: 5.79rem;
                         height:1.26rem;
                         color: #ffb794;
+                        >p{
+                            >span{
+                                font-size: .45rem;
+                                color: #ec1e1e;
+                                font-weight: bolder;
+                            }
+                        }
+                       
                     } 
                 }
                 &:nth-child(2){
@@ -607,20 +615,22 @@ html,body{
                     >a{
                         display: inline-block;
                         border: solid 1px #000;
-                        width:4.5rem;
+                        width:4.2rem;
                         height: .83rem;
                         text-align: center;
                         line-height: .83rem;
-                        font-size: .26rem;
                         color: #d60e0e;
                         border-radius: .415rem;
                         background-color: #ffb794;
-                        animation:mymove 1.3s infinite;
-                        -webkit-animation:mymove 1.3s infinite; /*Safari and Chrome*/
+                        animation:mymove 1.8s infinite;
+                        -webkit-animation:mymove 1.8s infinite; /*Safari and Chrome*/
                         animation-direction:alternate;/*轮流反向播放动画。*/
                         animation-timing-function: ease-in-out; /*动画的速度曲线*/
                         font-size: .4rem;
                         font-weight: 540;
+                        >span{
+                            font-weight: bolder;
+                        }
                     }
                 }
                 &:nth-child(3){
@@ -1415,6 +1425,13 @@ html,body{
                       &:nth-child(5){
                           margin-top: .4rem;
                       }
+                      &:nth-child(6){
+                          >span{
+                            font-size: .4rem;
+                            color: #ec1e1e;
+                            font-weight: bolder;
+                          }
+                        }
                     }
                     >a{
                         display: inline-block;
@@ -1422,8 +1439,6 @@ html,body{
                         height: 1.34rem;
                         background-color: rgb(189, 28, 28);
                         margin: .51rem auto 0;
-                        // background: url(../images/cm_10GB.gif) center no-repeat;
-                        // background-size: cover;
                     }
                 }
                 >a{
@@ -1440,6 +1455,11 @@ html,body{
                     border: solid 1px #000;
                     box-sizing: border-box;
                     color: #000;
+                    >span{
+                        font-size: .3rem;
+                        color: #ec1e1e;
+                        font-weight: bolder;
+                      }
                 }
             }
         }
@@ -1455,14 +1475,14 @@ html,body{
                 }
                 &:nth-child(2){
                     width: 7.5rem;
-                    height:4.64rem;
-                    background: url('../images/home_02.png') no-repeat;
+                    height:3.49rem;
+                    background: url('../images/friend_02.png') no-repeat;
                     background-size: cover;
                 }
                 &:nth-child(3){
                     width: 7.5rem;
-                    height:3.18rem;
-                    background: url('../images/home_03.png') no-repeat;
+                    height:4.79rem;
+                    background: url('../images/friend_03.png') no-repeat;
                     background-size: cover;
                     position: relative;
                     >div{
@@ -1470,17 +1490,14 @@ html,body{
                         flex-direction: column;
                         justify-content: center;
                         align-items: center;
-                        padding: .2rem .23rem;
-                        width: 6.5rem;
-                        height: 2.4rem;
+                        width: 6.46rem;
+                        height: 2.73rem;
                         font-size: .24rem;
                         color: #000;
-                        margin: 0 auto .45rem;
-                        border: solid 1px #03112b;
-                        box-sizing: border-box;
-                        border-radius: .2rem;
-                        background-color: #ff746b;
                         font-weight: bolder;
+                        background: url('../images/friend_01.png') no-repeat;
+                        background-size: cover;
+                        margin: 0 auto;
                         >p{
                             &:nth-child(2){
                                 margin: .1rem 0;
@@ -1498,6 +1515,7 @@ html,body{
                         position: absolute;
                         left: 0;
                         right: 0;
+                        bottom: .96rem;
                         margin: auto;
                         display: inline-block;
                         width:3.01rem;
@@ -1547,6 +1565,13 @@ html,body{
                         width: 5.79rem;
                         height:1.26rem;
                         color: #ffb794;
+                        >p{
+                            >span{
+                                font-size: .45rem;
+                                color: #ec1e1e;
+                                font-weight: bolder;
+                            }
+                        }
                     } 
                 }
                 &:nth-child(2){

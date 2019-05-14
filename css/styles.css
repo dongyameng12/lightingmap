@@ -84,6 +84,12 @@ body section.choose > div:nth-child(1) > div {
   height: 1.26rem;
   color: #ffb794;
 }
+html section.choose > div:nth-child(1) > div > p > span,
+body section.choose > div:nth-child(1) > div > p > span {
+  font-size: .45rem;
+  color: #ec1e1e;
+  font-weight: bolder;
+}
 html section.choose > div:nth-child(2),
 body section.choose > div:nth-child(2) {
   width: 7.5rem;
@@ -583,16 +589,15 @@ html section.main > div:nth-child(2) > a,
 body section.main > div:nth-child(2) > a {
   display: inline-block;
   border: solid 1px #000;
-  width: 4.5rem;
+  width: 4.2rem;
   height: .83rem;
   text-align: center;
   line-height: .83rem;
-  font-size: .26rem;
   color: #d60e0e;
   border-radius: .415rem;
   background-color: #ffb794;
-  animation: mymove 1.3s infinite;
-  -webkit-animation: mymove 1.3s infinite;
+  animation: mymove 1.8s infinite;
+  -webkit-animation: mymove 1.8s infinite;
   /*Safari and Chrome*/
   animation-direction: alternate;
   /*轮流反向播放动画。*/
@@ -600,6 +605,10 @@ body section.main > div:nth-child(2) > a {
   /*动画的速度曲线*/
   font-size: .4rem;
   font-weight: 540;
+}
+html section.main > div:nth-child(2) > a > span,
+body section.main > div:nth-child(2) > a > span {
+  font-weight: bolder;
 }
 html section.main > div:nth-child(3),
 body section.main > div:nth-child(3) {
@@ -1417,6 +1426,12 @@ html section.pop.ownmap > div > p:nth-child(5),
 body section.pop.ownmap > div > p:nth-child(5) {
   margin-top: .4rem;
 }
+html section.pop.ownmap > div > p:nth-child(6) > span,
+body section.pop.ownmap > div > p:nth-child(6) > span {
+  font-size: .4rem;
+  color: #ec1e1e;
+  font-weight: bolder;
+}
 html section.pop.ownmap > div > a,
 body section.pop.ownmap > div > a {
   display: inline-block;
@@ -1441,6 +1456,12 @@ body section.pop.ownmap > a {
   box-sizing: border-box;
   color: #000;
 }
+html section.pop.ownmap > a > span,
+body section.pop.ownmap > a > span {
+  font-size: .3rem;
+  color: #ec1e1e;
+  font-weight: bolder;
+}
 html section.fri_home,
 body section.fri_home {
   display: none;
@@ -1455,15 +1476,15 @@ body section.fri_home > div:nth-child(1) {
 html section.fri_home > div:nth-child(2),
 body section.fri_home > div:nth-child(2) {
   width: 7.5rem;
-  height: 4.64rem;
-  background: url('../images/home_02.png') no-repeat;
+  height: 3.49rem;
+  background: url('../images/friend_02.png') no-repeat;
   background-size: cover;
 }
 html section.fri_home > div:nth-child(3),
 body section.fri_home > div:nth-child(3) {
   width: 7.5rem;
-  height: 3.18rem;
-  background: url('../images/home_03.png') no-repeat;
+  height: 4.79rem;
+  background: url('../images/friend_03.png') no-repeat;
   background-size: cover;
   position: relative;
 }
@@ -1473,17 +1494,14 @@ body section.fri_home > div:nth-child(3) > div {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: .2rem .23rem;
-  width: 6.5rem;
-  height: 2.4rem;
+  width: 6.46rem;
+  height: 2.73rem;
   font-size: .24rem;
   color: #000;
-  margin: 0 auto .45rem;
-  border: solid 1px #03112b;
-  box-sizing: border-box;
-  border-radius: .2rem;
-  background-color: #ff746b;
   font-weight: bolder;
+  background: url('../images/friend_01.png') no-repeat;
+  background-size: cover;
+  margin: 0 auto;
 }
 html section.fri_home > div:nth-child(3) > div > p:nth-child(2),
 body section.fri_home > div:nth-child(3) > div > p:nth-child(2) {
@@ -1501,6 +1519,7 @@ body section.fri_home > div:nth-child(3) > a {
   position: absolute;
   left: 0;
   right: 0;
+  bottom: .96rem;
   margin: auto;
   display: inline-block;
   width: 3.01rem;
@@ -1551,6 +1570,12 @@ body section.fri_choose > div:nth-child(1) > div {
   width: 5.79rem;
   height: 1.26rem;
   color: #ffb794;
+}
+html section.fri_choose > div:nth-child(1) > div > p > span,
+body section.fri_choose > div:nth-child(1) > div > p > span {
+  font-size: .45rem;
+  color: #ec1e1e;
+  font-weight: bolder;
 }
 html section.fri_choose > div:nth-child(2),
 body section.fri_choose > div:nth-child(2) {
