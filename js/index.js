@@ -239,8 +239,8 @@ $(document).ready(function () {
 			} else {
                 current_clickclass = '.five_places'
                 current_lihe = 'five';
-                // 跳转链接本网（移动王卡）
-                $('#cm_aimg').css('background-image','url(images/cm_yidongw.gif)').attr('href',' https://service.bj.10086.cn/m/num/num/commonNum/showFontPage.action?busiCode=YDWKXCX'); 
+                // 跳转链接本网（移动光宽带）
+                $('#cm_aimg').css('background-image','url(images/cm_yidongguang.png)').attr('href',' https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx7858699aca01b75f&redirect_uri=http%3A%2F%2Fserviceimg.bmcc.com.cn%2Fweixin%2Fredirect%2FdispenseRequest.action&response_type=code&scope=snsapi_base&state=kdrbEBIZ#wechat_redirect'); 
                 // 跳转异网（宽带）
                 $('#yi_aimg').css('background-image','url(images/yi_kuandai.png)').attr('href','http://service.bj.10086.cn/m/p/kdzq/weixinyiwang/')
                 jiangli();
