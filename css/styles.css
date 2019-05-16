@@ -550,7 +550,7 @@ body section.main > div:nth-child(1) > div:nth-child(2) > div:nth-child(34) > di
 html section.main > div:nth-child(1) > div:nth-child(3),
 body section.main > div:nth-child(1) > div:nth-child(3) {
   position: absolute;
-  bottom: .18rem;
+  bottom: .4rem;
   left: 0;
   right: 0;
   margin: auto;
@@ -581,7 +581,7 @@ body section.main > div:nth-child(1) > div:nth-child(3) > p:nth-child(2) {
 html section.main > div:nth-child(2),
 body section.main > div:nth-child(2) {
   width: 6.66rem;
-  margin: .34rem auto .49rem;
+  margin: .2rem auto;
   display: flex;
   justify-content: center;
 }
