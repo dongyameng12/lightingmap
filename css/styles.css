@@ -197,7 +197,7 @@ html section.main > div:nth-child(1) > div:nth-child(2) > div:nth-child(3) > div
 body section.main > div:nth-child(1) > div:nth-child(2) > div:nth-child(3) > div {
   display: none;
   position: absolute;
-  top: 4.83rem;
+  top: 4.81rem;
   right: 1.47rem;
   width: .31rem;
   height: .13rem;
@@ -296,8 +296,8 @@ html section.main > div:nth-child(1) > div:nth-child(2) > div:nth-child(12) > di
 body section.main > div:nth-child(1) > div:nth-child(2) > div:nth-child(12) > div {
   display: none;
   position: absolute;
-  top: 3.65rem;
-  right: 1.2rem;
+  top: 3.64rem;
+  right: 1.21rem;
   width: .66rem;
   height: .91rem;
   background: url('../images/m_12.png') no-repeat;
@@ -318,8 +318,8 @@ html section.main > div:nth-child(1) > div:nth-child(2) > div:nth-child(14) > di
 body section.main > div:nth-child(1) > div:nth-child(2) > div:nth-child(14) > div {
   display: none;
   position: absolute;
-  top: 2.74rem;
-  left: 4.4rem;
+  top: 2.73rem;
+  left: 4.39rem;
   width: .82rem;
   height: .75rem;
   background: url('../images/m_14.png') no-repeat;
@@ -352,7 +352,7 @@ body section.main > div:nth-child(1) > div:nth-child(2) > div:nth-child(17) > di
   display: none;
   position: absolute;
   top: 1.77rem;
-  left: 2.2rem;
+  left: 2.19rem;
   width: 2rem;
   height: 1.6rem;
   background: url('../images/m_17.png') no-repeat;
@@ -362,7 +362,7 @@ html section.main > div:nth-child(1) > div:nth-child(2) > div:nth-child(18) > di
 body section.main > div:nth-child(1) > div:nth-child(2) > div:nth-child(18) > div {
   display: none;
   position: absolute;
-  top: .67rem;
+  top: .66rem;
   left: 0;
   width: 2.74rem;
   height: 2.05rem;
@@ -461,8 +461,8 @@ html section.main > div:nth-child(1) > div:nth-child(2) > div:nth-child(27) > di
 body section.main > div:nth-child(1) > div:nth-child(2) > div:nth-child(27) > div {
   display: none;
   position: absolute;
-  top: 2.39rem;
-  right: .88rem;
+  top: 2.38rem;
+  right: .89rem;
   width: .92rem;
   height: .6rem;
   background: url('../images/m_27.png') no-repeat;
@@ -472,8 +472,8 @@ html section.main > div:nth-child(1) > div:nth-child(2) > div:nth-child(28) > di
 body section.main > div:nth-child(1) > div:nth-child(2) > div:nth-child(28) > div {
   display: none;
   position: absolute;
-  top: 1.98rem;
-  right: 1.56rem;
+  top: 1.97rem;
+  right: 1.58rem;
   width: .25rem;
   height: .27rem;
   background: url('../images/m_28.png') no-repeat;
@@ -496,7 +496,7 @@ html section.main > div:nth-child(1) > div:nth-child(2) > div:nth-child(30) > di
 body section.main > div:nth-child(1) > div:nth-child(2) > div:nth-child(30) > div {
   display: none;
   position: absolute;
-  top: 1.74rem;
+  top: 1.73rem;
   right: 1.29rem;
   width: .73rem;
   height: 1.03rem;
@@ -507,7 +507,7 @@ html section.main > div:nth-child(1) > div:nth-child(2) > div:nth-child(31) > di
 body section.main > div:nth-child(1) > div:nth-child(2) > div:nth-child(31) > div {
   display: none;
   position: absolute;
-  top: 1.06rem;
+  top: 1.05rem;
   right: .14rem;
   width: 1.13rem;
   height: .8rem;
@@ -518,7 +518,7 @@ html section.main > div:nth-child(1) > div:nth-child(2) > div:nth-child(32) > di
 body section.main > div:nth-child(1) > div:nth-child(2) > div:nth-child(32) > div {
   display: none;
   position: absolute;
-  top: 1.48rem;
+  top: 1.47rem;
   right: .64rem;
   width: .8rem;
   height: .78rem;
