@@ -135,7 +135,7 @@ body section.main {
 html section.main > div:nth-child(1),
 body section.main > div:nth-child(1) {
   width: 7.5rem;
-  height: 10.06rem;
+  height: 9.28rem;
   background: url('../images/main_01.png') no-repeat;
   background-size: cover;
   position: relative;
@@ -550,6 +550,7 @@ body section.main > div:nth-child(1) > div:nth-child(2) > div:nth-child(34) > di
 html section.main > div:nth-child(1) > div:nth-child(3),
 body section.main > div:nth-child(1) > div:nth-child(3) {
   position: absolute;
+  bottom: .18rem;
   left: 0;
   right: 0;
   margin: auto;
@@ -580,7 +581,7 @@ body section.main > div:nth-child(1) > div:nth-child(3) > p:nth-child(2) {
 html section.main > div:nth-child(2),
 body section.main > div:nth-child(2) {
   width: 6.66rem;
-  margin: .74rem auto .49rem;
+  margin: .34rem auto .49rem;
   display: flex;
   justify-content: center;
 }
