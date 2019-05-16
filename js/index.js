@@ -224,7 +224,7 @@ $(document).ready(function () {
                         break;
                     case 2:
                         // 待定
-                        $('#cm_aimg').css('background-color','#cc2e38')
+                        $('#cm_aimg').css('background-image','url(images/cm_songni.gif)')
                 }
                 // 异网（移动王卡）
                 $('#yi_aimg').css('background-image','url(images/cm_yidongw.gif)').attr('href',' https://service.bj.10086.cn/m/num/num/commonNum/showFontPage.action?busiCode=YDWKWXYW'); 

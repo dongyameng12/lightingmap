@@ -101,7 +101,7 @@ body section.choose > div:nth-child(2) {
 html section.choose > div:nth-child(2) > div,
 body section.choose > div:nth-child(2) > div {
   width: 6.77rem;
-  height: 6.44rem;
+  height: 7.84rem;
   background: url('../images/map.png') no-repeat;
   background-size: cover;
   margin: 0 auto;
@@ -109,7 +109,7 @@ body section.choose > div:nth-child(2) > div {
 html section.choose > div:nth-child(2) > a,
 body section.choose > div:nth-child(2) > a {
   position: absolute;
-  bottom: 0;
+  top: 8.1rem;
   left: 0;
   right: 0;
   margin: auto;
@@ -128,14 +128,14 @@ html section.main,
 body section.main {
   display: none;
   width: 7.5rem;
-  height: 17rem;
+  height: 18rem;
   background: url('../images/bg.png') no-repeat;
   background-size: cover;
 }
 html section.main > div:nth-child(1),
 body section.main > div:nth-child(1) {
   width: 7.5rem;
-  height: 8.86rem;
+  height: 10.06rem;
   background: url('../images/main_01.png') no-repeat;
   background-size: cover;
   position: relative;
@@ -165,7 +165,7 @@ body section.main > div:nth-child(1) > div:nth-child(1) > a {
 html section.main > div:nth-child(1) > div:nth-child(2),
 body section.main > div:nth-child(1) > div:nth-child(2) {
   width: 6.77rem;
-  height: 6.44rem;
+  height: 7.84rem;
   background: url('../images/map.png') no-repeat;
   background-size: cover;
   position: relative;
@@ -175,7 +175,7 @@ html section.main > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div
 body section.main > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div {
   display: none;
   position: absolute;
-  bottom: .82rem;
+  top: 5.24rem;
   left: 4.25rem;
   width: .37rem;
   height: .38rem;
@@ -186,7 +186,7 @@ html section.main > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > div
 body section.main > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > div {
   display: none;
   position: absolute;
-  bottom: 1.61rem;
+  top: 4.28rem;
   right: .65rem;
   width: .24rem;
   height: .54rem;
@@ -197,7 +197,7 @@ html section.main > div:nth-child(1) > div:nth-child(2) > div:nth-child(3) > div
 body section.main > div:nth-child(1) > div:nth-child(2) > div:nth-child(3) > div {
   display: none;
   position: absolute;
-  bottom: 1.47rem;
+  top: 4.83rem;
   right: 1.47rem;
   width: .31rem;
   height: .13rem;
@@ -208,7 +208,7 @@ html section.main > div:nth-child(1) > div:nth-child(2) > div:nth-child(4) > div
 body section.main > div:nth-child(1) > div:nth-child(2) > div:nth-child(4) > div {
   display: none;
   position: absolute;
-  bottom: 1.39rem;
+  top: 4.87rem;
   right: 1.72rem;
   width: .2rem;
   height: .19rem;
@@ -220,7 +220,7 @@ body section.main > div:nth-child(1) > div:nth-child(2) > div:nth-child(5) > div
   display: none;
   position: absolute;
   top: 2.29rem;
-  left: 3.64rem;
+  left: 3.63rem;
   width: .42rem;
   height: .68rem;
   background: url('../images/m_05.png') no-repeat;
@@ -252,7 +252,7 @@ html section.main > div:nth-child(1) > div:nth-child(2) > div:nth-child(8) > div
 body section.main > div:nth-child(1) > div:nth-child(2) > div:nth-child(8) > div {
   display: none;
   position: absolute;
-  top: 3.87rem;
+  top: 3.86rem;
   left: 3.53rem;
   width: .84rem;
   height: .72rem;
@@ -340,7 +340,7 @@ html section.main > div:nth-child(1) > div:nth-child(2) > div:nth-child(16) > di
 body section.main > div:nth-child(1) > div:nth-child(2) > div:nth-child(16) > div {
   display: none;
   position: absolute;
-  top: 2.26rem;
+  top: 2.25rem;
   right: 2.27rem;
   width: .73rem;
   height: 1.22rem;
@@ -352,7 +352,7 @@ body section.main > div:nth-child(1) > div:nth-child(2) > div:nth-child(17) > di
   display: none;
   position: absolute;
   top: 1.77rem;
-  left: 2.21rem;
+  left: 2.2rem;
   width: 2rem;
   height: 1.6rem;
   background: url('../images/m_17.png') no-repeat;
@@ -395,8 +395,8 @@ html section.main > div:nth-child(1) > div:nth-child(2) > div:nth-child(21) > di
 body section.main > div:nth-child(1) > div:nth-child(2) > div:nth-child(21) > div {
   display: none;
   position: absolute;
-  top: 4.28rem;
-  left: 3.66rem;
+  top: 4.27rem;
+  left: 3.64rem;
   width: 1.08rem;
   height: .77rem;
   background: url('../images/m_21.png') no-repeat;
@@ -406,8 +406,8 @@ html section.main > div:nth-child(1) > div:nth-child(2) > div:nth-child(22) > di
 body section.main > div:nth-child(1) > div:nth-child(2) > div:nth-child(22) > div {
   display: none;
   position: absolute;
-  top: 4.39rem;
-  right: 1.29rem;
+  top: 4.38rem;
+  right: 1.3rem;
   width: 1.08rem;
   height: .85rem;
   background: url('../images/m_22.png') no-repeat;
@@ -418,7 +418,7 @@ body section.main > div:nth-child(1) > div:nth-child(2) > div:nth-child(23) > di
   display: none;
   position: absolute;
   top: 3.88rem;
-  right: .89rem;
+  right: .91rem;
   width: .61rem;
   height: .76rem;
   background: url('../images/m_23.png') no-repeat;
@@ -428,8 +428,8 @@ html section.main > div:nth-child(1) > div:nth-child(2) > div:nth-child(24) > di
 body section.main > div:nth-child(1) > div:nth-child(2) > div:nth-child(24) > div {
   display: none;
   position: absolute;
-  top: 3.42rem;
-  right: .7rem;
+  top: 3.4rem;
+  right: .71rem;
   width: .57rem;
   height: .61rem;
   background: url('../images/m_24.png') no-repeat;
@@ -439,8 +439,8 @@ html section.main > div:nth-child(1) > div:nth-child(2) > div:nth-child(25) > di
 body section.main > div:nth-child(1) > div:nth-child(2) > div:nth-child(25) > div {
   display: none;
   position: absolute;
-  top: 3.31rem;
-  right: .63rem;
+  top: 3.3rem;
+  right: .64rem;
   width: .32rem;
   height: .17rem;
   background: url('../images/m_25.png') no-repeat;
@@ -450,8 +450,8 @@ html section.main > div:nth-child(1) > div:nth-child(2) > div:nth-child(26) > di
 body section.main > div:nth-child(1) > div:nth-child(2) > div:nth-child(26) > div {
   display: none;
   position: absolute;
-  top: 2.84rem;
-  right: .8rem;
+  top: 2.83rem;
+  right: .81rem;
   width: .8rem;
   height: .64rem;
   background: url('../images/m_26.png') no-repeat;
@@ -485,7 +485,7 @@ body section.main > div:nth-child(1) > div:nth-child(2) > div:nth-child(29) > di
   display: none;
   position: absolute;
   top: 2.09rem;
-  right: 1.37rem;
+  right: 1.38rem;
   width: .26rem;
   height: .27rem;
   background: url('../images/m_29.png') no-repeat;
@@ -508,7 +508,7 @@ body section.main > div:nth-child(1) > div:nth-child(2) > div:nth-child(31) > di
   display: none;
   position: absolute;
   top: 1.06rem;
-  right: .12rem;
+  right: .14rem;
   width: 1.13rem;
   height: .8rem;
   background: url('../images/m_31.png') no-repeat;
@@ -519,7 +519,7 @@ body section.main > div:nth-child(1) > div:nth-child(2) > div:nth-child(32) > di
   display: none;
   position: absolute;
   top: 1.48rem;
-  right: .62rem;
+  right: .64rem;
   width: .8rem;
   height: .78rem;
   background: url('../images/m_32.png') no-repeat;
@@ -530,7 +530,7 @@ body section.main > div:nth-child(1) > div:nth-child(2) > div:nth-child(33) > di
   display: none;
   position: absolute;
   top: .06rem;
-  right: .95rem;
+  right: .96rem;
   width: 3rem;
   height: 2.57rem;
   background: url('../images/m_33.png') no-repeat;
@@ -550,7 +550,6 @@ body section.main > div:nth-child(1) > div:nth-child(2) > div:nth-child(34) > di
 html section.main > div:nth-child(1) > div:nth-child(3),
 body section.main > div:nth-child(1) > div:nth-child(3) {
   position: absolute;
-  bottom: .2rem;
   left: 0;
   right: 0;
   margin: auto;
@@ -581,7 +580,7 @@ body section.main > div:nth-child(1) > div:nth-child(3) > p:nth-child(2) {
 html section.main > div:nth-child(2),
 body section.main > div:nth-child(2) {
   width: 6.66rem;
-  margin: .34rem auto .49rem;
+  margin: .74rem auto .49rem;
   display: flex;
   justify-content: center;
 }
@@ -1598,7 +1597,7 @@ body section.fri_choose > div:nth-child(2) {
 html section.fri_choose > div:nth-child(2) > div,
 body section.fri_choose > div:nth-child(2) > div {
   width: 6.77rem;
-  height: 6.44rem;
+  height: 7.84rem;
   background: url('../images/map.png') no-repeat;
   background-size: cover;
   margin: 0 auto;
@@ -1606,6 +1605,7 @@ body section.fri_choose > div:nth-child(2) > div {
 html section.fri_choose > div:nth-child(2) > a,
 body section.fri_choose > div:nth-child(2) > a {
   position: absolute;
+  top: 9.1rem;
   bottom: 0;
   left: 0;
   right: 0;
