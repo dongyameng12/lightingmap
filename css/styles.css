@@ -128,7 +128,7 @@ html section.main,
 body section.main {
   display: none;
   width: 7.5rem;
-  height: 18rem;
+  height: 17rem;
   background: url('../images/bg.png') no-repeat;
   background-size: cover;
 }
