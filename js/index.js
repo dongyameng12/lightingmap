@@ -216,7 +216,7 @@ $(document).ready(function () {
                 switch(data){
                     case 0:
                         //流量放心用
-                        $('#cm_aimg').css('background-image','url(images/cq_qita.gif)').attr('href','https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx7858699aca01b75f&redirect_uri=http%3A%2F%2Fserviceimg.bmcc.com.cn%2Fweixin%2Fredirect%2FdispenseRequest.action&response_type=code&scope=snsapi_base&state=cxbxl2018072#wechat_redirect');    
+                        $('#cm_aimg').css('background-image','url(images/cq_qita.gif)').attr('href','https://mp.weixin.qq.com/s/K6W3CaZajWdDb4WgBxJUXQ');    
                         break;
                     case 1:
                         // 10元10GB
@@ -224,7 +224,7 @@ $(document).ready(function () {
                         break;
                     case 2:
                         // 待定
-                        $('#cm_aimg').css('background-image','url(images/cm_songni.gif)')
+                        $('#cm_aimg').css('background-image','url(images/cm_songni.gif)').attr('href','http://sc.bj.chinamobile.com/activity/loading/loading.html?actname=coupon')
                 }
                 // 异网（移动王卡）
                 $('#yi_aimg').css('background-image','url(images/cm_yidongw.gif)').attr('href',' https://service.bj.10086.cn/m/num/num/commonNum/showFontPage.action?busiCode=YDWKWXYW'); 
