@@ -10,6 +10,7 @@
     win.addEventListener(resizeEvt, recalc, false);
     doc.addEventListener('DOMContentLoaded', recalc, false);
 })(document, window);
+
 // ios点击事件不触发
 $(function() {  
     FastClick.attach(document.body);  
